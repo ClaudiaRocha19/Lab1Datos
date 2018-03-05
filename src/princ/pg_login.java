@@ -46,6 +46,7 @@ public class pg_login extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         panel_carga = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         rSProgressMaterial1 = new rojerusan.componentes.RSProgressMaterial();
@@ -59,7 +60,6 @@ public class pg_login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btn_cerrar = new rojeru_san.RSButtonRiple();
-        rSButtonRiple2 = new rojeru_san.RSButtonRiple();
         btn_menuregi = new rojeru_san.RSButton();
         btn_menuingres = new rojeru_san.RSButton();
 
@@ -105,8 +105,6 @@ public class pg_login extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/pass.png"))); // NOI18N
         panel_login.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, 42));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/user32.png"))); // NOI18N
         panel_login.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 42));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -114,6 +112,9 @@ public class pg_login extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Ingresar");
         panel_login.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 180, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/user.png"))); // NOI18N
+        panel_login.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 42));
 
         rSPanelsSlider1.add(panel_login, "card2");
 
@@ -249,15 +250,12 @@ public class pg_login extends javax.swing.JFrame {
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 220, 217));
 
         btn_cerrar.setBackground(new java.awt.Color(15, 43, 60));
-        btn_cerrar.setText("X");
+        btn_cerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancel.png"))); // NOI18N
         btn_cerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cerrarActionPerformed(evt);
             }
         });
-
-        rSButtonRiple2.setBackground(new java.awt.Color(15, 43, 60));
-        rSButtonRiple2.setText("-");
 
         btn_menuregi.setBackground(new java.awt.Color(255, 255, 255));
         btn_menuregi.setText("Registrarse");
@@ -294,8 +292,6 @@ public class pg_login extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(rSButtonRiple2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btn_cerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12))))
         );
@@ -306,9 +302,7 @@ public class pg_login extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_cerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSButtonRiple2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn_cerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -428,13 +422,13 @@ public class pg_login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel msg_errorsesion;
     private javax.swing.JPanel panel_carga;
     private javax.swing.JPanel panel_login;
     private javax.swing.JPanel panel_registro;
-    private rojeru_san.RSButtonRiple rSButtonRiple2;
     private rojeru_san.RSPanelShadow rSPanelShadow1;
     private rojeru_san.RSPanelsSlider rSPanelsSlider1;
     private rojerusan.componentes.RSProgressMaterial rSProgressMaterial1;
